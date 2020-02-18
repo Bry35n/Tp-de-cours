@@ -1,0 +1,687 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+/*    font-family: 'Bazar', serif, sans-serif;*/
+}
+
+@font-face {
+    font-family: 'Zona_Black';
+    src: url("../FONT/Zona_Black.ttf");
+}
+/*------------------------------------------Mise en place de l'entete de chaque page----------------------------------------------------------*/
+.entete{
+    font-family: 'Josefin Sans', 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.entete h1{
+    font-weight: normal;
+    font-size: 30px;
+    padding-top: 15%;
+    color: RGB(90, 90, 90);
+}
+
+.entete h1::after{
+    content: "";
+    display: flex;
+    border-bottom: 2px solid RGB(239, 19, 91);
+    padding-top: 10%;
+}
+.entete p{
+    text-align: center;
+    padding-top: 30px;
+    color: RGB(201, 201, 201);
+}                                                   
+/*---------------------------------------------------------------Page de garde---------------------------------------------------------------*/
+
+header{             /*Placement de l'image de fond*/
+    background-image: url(../IMG/Dark-Wallpapers.jpg);
+    background-size: cover;
+    font-family: 'Zona_Black', serif, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header ul{
+    width: 90%;
+}
+nav{
+    display: flex;
+    width: 90%;
+    padding-top: 1%;
+}
+.lien {          /*Mise en place des liens de navigation à droite*/
+    display: inline-flex;
+    justify-content: flex-end;
+    color: white;
+    padding-right: 15px;
+    text-decoration: none;
+    font-size: 13px;
+    transition-property: color;
+    transition-duration: 0.3s;
+}
+
+.lien:hover{    /*couleur survol souris sur le menu*/
+    color: RGB(239, 19, 91);
+}
+
+#logo::before{
+    content: '///';
+    color: RGB(239, 19, 91);
+}
+
+#logo {             /*placement du logo*/
+    display: inline-flex;
+    justify-content: flex-start;
+    padding-right: 50%;
+    padding-left: 10%;
+    padding-top: 1%;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: white;
+}
+
+#page_principale{   /* centrer le titre + paragraphe sur milieu de page*/
+    width: 100%;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header span{        /* police du "premier titre"*/
+    font-family: 'Zona_Black', 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
+header h1{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+
+#centrage h1::after{
+    content: "";
+    width: 25%;
+    height: 0px;
+    display: inline-block;
+    border: 1px solid RGB(239, 19, 91);
+}
+
+header p{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    padding-bottom: 70px;
+    padding-top: 20px;
+}
+
+.show_more{    /* mise en forme du bouton "show more" */
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 12px;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 13px;
+    padding-right: 37px;
+    padding-left: 37px;
+    background-color: RGB(239, 19, 91);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    transition-property: color, background-color, border-radius;
+    transition-duration: 0.3s;
+}
+
+.show_more:hover{            /*Animation du bouton "show more"*/
+    color: RGB(239, 19, 91);
+    background-color: white;
+    border-radius: 1px 1px 1px 1px;
+}
+
+
+/*---------------------------------------------------------------Our Services---------------------------------------------------------------*/
+
+#our_services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#our_services section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 70%;
+    padding-top: 2%;
+    color: RGB(201, 201, 201);
+    padding-bottom: 80px;
+}
+
+#our_services section article img{  /*Mise en place des cercles autour des images*/
+    margin: 15px;
+    border: 2px solid RGB(201, 201, 201);
+    border-radius: 80px;
+    padding: 25px;
+    width: 100px;
+}
+
+#our_services section article p{    /*Mise en place des paragraphes sous les photos encerclées*/
+    text-align: center;
+    color: RGB(239, 19, 91);
+    font-family: 'Montserrat', serif, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+#footer_services{
+    background-image: url(../IMG/testimonial.jpg);
+    background-position: center;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+#quote_haut{                    /*Mise en place des quotes haut et bas*/
+    padding-bottom: 25px;
+    height: 60px;                               /**/
+}                                               /**/
+
+#quote_bas{                     /*Mise en place des quotes haut et bas*/
+    padding-top: 25px;
+    height: 60px;
+}
+
+/*---------------------------------------------------------------Our Prices-----------------------------------------------------------------------------*/
+
+
+#prices .entete h1{     
+    padding-top: 100px;
+}
+/*--------------------Mise en place des prix--------------------*/
+
+#prices{
+    background-color: RGB(244, 244, 244);
+    
+}
+#partie_prix{       /*Mise en place des articles EN LIGNE (ROW) avec les espaces*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: RGB(90, 90, 90);
+}
+#partie_prix section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+    padding-bottom: 100px;
+}
+
+#partie_prix section article{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid RGB(244, 244, 244);
+    background-color: white;
+    height: 94%;
+}
+
+.prix{                     /*Mise en place du "haut de l'article" où le prix est affiché*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: RGB(90, 90, 90);
+    width: 210px;
+    font-weight: bold;
+    height: 122px;
+    padding-top: 15px;
+}
+
+.prix:hover{
+    background-color: RGB(239, 19, 91);
+}
+
+.prix span{                /*taille affichage des prix*/
+    width: 60px;
+    font-size: 41px;
+    padding: 3px;
+    color: white;
+}
+.prix p{
+    width: 89px;
+    text-align: center;
+    color: white;
+}
+
+#partie_prix h2{                 /*Mise en forme et mise en place de la catégorie d'achat "standard", "premium"...*/
+    color: RGB(90, 90, 90);
+    border: 1px solid RGB(244, 244, 244);
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: RGB(244, 244, 244);
+    margin-top: -20px;
+    margin-bottom: 25px;
+}
+
+#partie_prix p{            /*Gérer l'espace interligne de description de chaque article/prix"*/
+    line-height: 35px;
+}
+
+.buy{                   /*Positionnement bouton "BUY NOW"*/
+    color: white;
+    border: 1px solid RGB(239, 19, 91);
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: RGB(239, 19, 91);
+    margin-top: 30px;
+    transition-property: background-color, color, border-radius, box-shadow;
+    transition-duration: 0.3s;
+}
+
+.buy:hover{            /*Animation du bouton "BUY NOW"*/
+    border-radius: 1px 1px 1px 1px;
+    color: RGB(239, 19, 91);
+    background-color: white;
+    box-shadow: 5px 4px 8px rgba(239,19,91,0.69);
+    
+}
+
+#description{           /* mise en place des éléments descriptifs reliés aux articles*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+#description section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 60%;
+    padding-top: 60px;
+}
+
+#description section article{
+    width: 30%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.image{             /*Mise en place des éléments à l'intérieur des div de descriptions*/
+    height: 57px;
+    margin-right: 14px;
+}
+.paragraphe{
+    margin-top: -3px;
+}
+#description section article h2{
+    font-size: 15px;
+    color: RGB(239, 19, 91);
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+#description section article p{
+    font-size: 14px;
+    width: 235px;
+    line-height: 20px;
+    color: RGB(90, 90, 90);
+}
+
+#footer_prices{             /*Mise en place du footer ROSE de la page "prix"*/
+    background-color: RGB(239, 19, 91);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: 'Josefin sans', 'Montserrat', sans-serif;
+}
+
+#footer_prices a{       /*Mise en place du footer ROSE de la page "prix"*/
+    margin-left: 200px;
+    border: 1px solid white;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: white;
+    color: RGB(239, 19, 91);
+    font-weight: bold;
+    font-family: 'Josefin sans', 'Montserrat', sans-serif;
+    margin-top: -5px;
+    transition-property: border-radius;
+    transition-duration: 0.3s;
+}
+
+#footer_prices a:hover{
+    border-radius: 1px 1px 1px 1px;
+}
+
+/*---------------------------------------------------------------Latest Updates-----------------------------------------------------------------------------*/
+
+#last_updates{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Josefin sans', 'Montserrat', sans-serif;
+    width: 100%;
+    background-color: white;
+}
+
+#last_updates section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 70%;
+    margin-left: -48px;
+    padding-top: 60px;
+}
+
+#last_updates section article{
+    width: 345px;
+    background-color: RGB(239, 19, 91);
+    height: 339px;
+    margin-bottom: 60px;
+}
+
+#last_updates section article img{
+    width: 345px;
+
+}
+
+
+.updates_paragraphe{                    /*Mise en place des paragraphes sous les images "last updates"*/
+    background-color: RGB(244, 244, 244);   
+    width: 345px;
+    margin-top: -7px;
+}
+
+.updates_paragraphe h1{
+    padding-top: 30px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding-left: 4%;
+    color: RGB(90, 90, 90);
+}
+
+.updates_paragraphe p{
+    line-height: 22px;
+    margin-bottom: 60px;
+    width: 100%;
+    padding-left: 4%;
+    color: grey;
+    padding-bottom: 15px;
+}
+
+.separateur{                /*Permet la mise en place de la ligne rose horizontale*/ 
+    margin-top: -10px;
+    width: 345px;
+    height: 13px;
+    background-color: RGB(239, 19, 91);
+    transform: rotate(1.5deg);   
+}
+
+.image_separateur{  
+    width: 345px;
+    overflow: hidden;
+    height: 242px;
+}
+
+.image_separateur:hover{  /*Permet la mise en place de la ligne rose horizontale*/ 
+    opacity: 20%;
+}
+
+/*----------------------------------------------------------------------Footer updates----------------------------------------------------------------------*/
+
+#footer_updates{
+    background-image: url(../IMG/post.jpg);     /*Partie avec les montagnes, description, et bouton show_more*/
+    background-position: bottom;
+    font-family: 'Josefin Sans', 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-bottom: 80px;
+    background-position: center;
+    background-size: cover;
+    margin-top: 120px;
+}
+
+#footer_updates span{
+    text-transform: uppercase;
+}
+#footer_updates h1{
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+#footer_updates h1::after{                      /*Trait rose sous le titre*/
+    content:'';
+    display: flex;
+    border-bottom: 2px solid RGB(239, 19, 91);
+    padding-top: 10%;
+}
+
+#footer_updates p{
+    width: 50%; 
+    text-align: center;
+    line-height: 30px;
+}
+
+#footer_updates .show_more{
+    margin-top: 50px;
+    font-family: 'Zona_Black', sans-serif;
+}
+
+/*----------------------------------------------------------------------Safari browser----------------------------------------------------------------------*/
+
+#safari{                                    /*Mise en place des éléments Image= gauche, texte= droite*/
+    background-color:  RGB(244, 244, 244);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Josefin sans', sans-serif;
+    color: RGB(90, 90, 90);
+}
+
+#safari section{                            /*Mise en place des éléments Image= gauche, texte= droite*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 85%;
+    height: 500px;
+    margin-top: 80px;
+}
+
+#safari h1{
+    font-size: 30px;
+    margin-top: 70px;
+    margin-left: 40px;
+}
+
+#safari h1::after{
+    content:'';
+    display: flex;
+    width: 30%;
+    border-bottom: 2px solid RGB(239, 19, 91);
+    padding-top: 20px;
+}
+
+#safari p{
+    margin-left: 40px;
+    margin-top: 30px;
+    font-size: 15px;
+    width: 478px;
+    margin-right: 100px;
+    line-height: 25px;
+}
+
+#safari a{                              /*Bouton download*/
+    font-family: 'Zona_Black', sans-serif;
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+
+/*----------------------------------------------------------------------FOOTER--------------------------------------------------------------------------*/
+
+footer{
+    background-color: RGB(43, 43, 43);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: white;
+    text-transform: uppercase;
+}
+
+#footer_global{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#footer_global p{
+    padding-right: 500px;
+}
+
+#footer_global span::after{
+    content:' IMIE-RENNES';
+    color: RGB(239, 19, 91);
+}
+
+
+/*----------------------------------------------------------------------Responsive (ipad)----------------------------------------------------------------------*/
+
+@media screen and (max-width:768px){
+    #logo{
+        padding-right: 120px;
+        padding-left: 0px;
+    }
+    #partie_prix section{
+        flex-wrap: wrap;
+    }
+    #partie_prix section article{
+        height: 400px;
+    }
+    #description section{
+        width: 100%;
+    }
+    #description section article{
+        width: 33%;
+    }
+    #description section article p{
+        width: 80%;
+    }
+    #footer_prices{
+        font-size: 15px;
+    }
+    #footer_prices a{
+        margin-left: 15px;
+        margin-top: -10px;
+    }
+    #last_updates section{
+        width: 90%;
+    }
+    #last_updates section article{
+        width: 45%;
+    }
+    #footer_updates p{
+        width: 95%;
+    }
+    #safari{
+        margin-top: 175px;
+    }
+    #safari section{
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 235px;
+        width: 80%;
+    }
+    #safari_desc img{
+        text-align: center;
+        margin-top: -65px;
+        margin-bottom: 495px;
+    }
+    #safari_desc{
+        text-align: center;
+        margin-bottom: 430px;
+    }
+    #safari h1{
+        margin-top: 10px;
+    }
+    #safari h1::after{
+        width: 50%;
+        margin-left: 25%;
+    }
+    #safari p{
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 100%;
+    }
+    #safari a{
+        position: inherit;
+        margin-left: 0px;
+        display: inline-block;
+    }
+    #footer_global p{
+        padding-right: 50px;
+    }
+}
